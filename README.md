@@ -1,0 +1,2 @@
+# nn_face_recognition
+CNNを用いた機械学習で人の顔を認識するプログラムを作る。
