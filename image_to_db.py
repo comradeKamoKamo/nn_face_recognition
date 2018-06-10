@@ -39,4 +39,3 @@ def image_to_db(photo_size,photo_count,label,path_in,path_out,first_index=0):
 
 if __name__=="__main__":
     main()
-

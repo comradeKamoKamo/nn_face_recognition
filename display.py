@@ -1,4 +1,4 @@
-from keras.models import Sequential
+﻿from keras.models import Sequential
 from keras.models import model_from_json
 import numpy as np
 import glob , os, cv2, time
@@ -13,7 +13,6 @@ def main():
     
     #映像入力0番からインスタンス化
     cap = cv2.VideoCapture(0)
-    i = 0
     try:
        while(True):
             #Webカメラから映像を取得
@@ -72,5 +71,3 @@ class pycolor:
 
 if __name__=="__main__":
     main()
-
-
