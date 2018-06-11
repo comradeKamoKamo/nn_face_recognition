@@ -15,8 +15,10 @@ CNNを用いた機械学習で人の顔を認識するプログラムを作る�
 - OpenCV, scikit-learn, numpy
 ## PC
 - Microsoft Windows 10 Home / 10.0.17134 ビルド 17134
-- Intel Celeron CPU N3350    
-悲しいかなGPUもない低スペ...そのため、学習などにはGoogle Colabも用いた。
+- Intel Celeron CPU N3350  
+- VGA UVC WebCamera    
+悲しいかなGPUもない低スペ...そのため、学習などにはGoogle Colabも用いた。  
+display.pyについては0番の映像入力がVGA画質(640x480)である前提で書かれています。
   
 # Thank you for reading.
 　読んでくれてありがとうございます。

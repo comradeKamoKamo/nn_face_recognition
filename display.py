@@ -16,6 +16,7 @@ def main():
     try:
        while(True):
             #Webカメラから映像を取得
+            #注：0番が640x480の画質のWebカメラである必要があります。
             ret, frame = cap.read()
             if ret:
                 #画像をトリミング
@@ -36,7 +37,8 @@ def main():
                     print(pycolor.BLUE+"This may NOT be a face.",pycolor.END,r)
                 
                 #表示
-                cv2.imshow('Face Recognition', dst_f)
+                view = cv2.resize(dst_f,(720,720))
+                cv2.imshow('Face Recognition', view)
                 cv2.waitKey(20)
             else:
                 time.sleep(2)
