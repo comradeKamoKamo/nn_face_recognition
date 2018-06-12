@@ -30,9 +30,9 @@ def main():
                 data = data.reshape(1,50,50,3)
                 #予測
                 r = model.predict(data,verbose=0)[0]                    
-                if r[0]>=0.4:
+                if r[0]>=0.3:
                     print(pycolor.RED+"This may be a FACE."+pycolor.END,r)
-                    cv2.putText(dst_f,"FACE!",(0,400),cv2.FONT_HERSHEY_DUPLEX,1.3,(0,0,255))
+                    cv2.putText(dst_f,"FACE!",(0,400),cv2.FONT_HERSHEY_DUPLEX,2,(0,0,255))
                 else:
                     print(pycolor.BLUE+"This may NOT be a face.",pycolor.END,r)
                 
